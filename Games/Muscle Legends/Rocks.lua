@@ -2,54 +2,60 @@ local RockData = {
 
     {
         displayName = "Tiny Rock",
-        internalName = "Tiny Island Rock",
+        internalName = "Tiny Rock",
         neededDurability = 0,
     },
 
+    { 
+        displayName = "Punching Rock",
+        internalName = "Punching Rock",
+        neededDurability = 10,
+    },
+
     {
-        displayName = "Starter Rock",
-        internalName = "Starter Island Rock",
+        displayName = "Large Rock",
+        internalName = "Large Rock",
         neededDurability = 100,
     },
 
     {
-        displayName = "Legend Beach Rock",
-        internalName = "Legend Beach Rock",
+        displayName = "Golden Rock",
+        internalName = "Golden Rock",
         neededDurability = 5000,
     },
 
     {
         displayName = "Frozen Rock",
-        internalName = "Frost Gym Rock",
+        internalName = "Frozen Rock",
         neededDurability = 150000,
     },
 
     {
         displayName = "Mythical Rock",
-        internalName = "Mythical Gym Rock",
+        internalName = "Mythical;/ Rock",
         neededDurability = 400000,
     },
 
     {
-        displayName = "Eternal Rock",
-        internalName = "Eternal Gym Rock",
+        displayName = "Inferno Rock",
+        internalName = "Inferno Rock",
         neededDurability = 750000,
     },
 
     {
         displayName = "Legend Rock",
-        internalName = "Legend Gym Rock",
+        internalName = "Legend Rock",
         neededDurability = 1000000,
     },
 
     {
-        displayName = "Muscle King Rock",
-        internalName = "Muscle King Gym Rock",
+        displayName = "Muscle King Mountain",
+        internalName = "Muscle King Mountain",
         neededDurability = 5000000,
     },
 
     {
-        displayName = "Jungle Rock",
+        displayName = "Ancient Jungle Rock",
         internalName = "Ancient Jungle Rock",
         neededDurability = 10000000,
     },
