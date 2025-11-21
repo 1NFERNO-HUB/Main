@@ -1,0 +1,53 @@
+
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/1NFERNO-HUB/Main/refs/heads/main/Settings/Librarys/Elerium"))()
+
+local Settings = {
+    AimbotEnabled = false,
+    FOV = 90
+}
+
+local function LogAction(message)
+    print("LOG: " .. message)
+end
+
+local MyWindow = library:AddWindow("INFERNO Hub", {
+    can_resize = true, -- Allow the user to resize the window
+})
+
+local MainTab = MyWindow:AddTab("Main Features")
+
+
+MainTab:AddButton("Execute Exploit", function()
+    LogAction("The exploit script has been executed.")
+end)
+
+MainTab:AddSwitch("Aimbot Toggle", function(newState)
+    Settings.AimbotEnabled = newState
+    if newState then
+        LogAction("Aimbot is now ENABLED.")
+    else
+        LogAction("Aimbot is now DISABLED.")
+    end
+end, {
+    default = Settings.AimbotEnabled 
+})
+
+MainTab:AddSlider("Aimbot FOV", function(newValue)
+    Settings.FOV = math.floor(newValue)
+    LogAction("FOV set to: " .. Settings.FOV)
+end, {
+    min = 10,     -- Minimum value
+    max = 200,    -- Maximum value
+    default = Settings.FOV,
+    rounding = 0  -- Display as an integer
+})
+
+MainTab:AddKeybind("Toggle WalkSpeed", function(keyState)
+    if keyState then
+        LogAction("Keybind pressed! Toggling WalkSpeed...")
+    end
+end, {
+    default = Enum.KeyCode.T -- Default key is 'T'
+})
+
+LogAction("UI is ready. Press " .. tostring(library.options.toggle_key) .. " to open/close the window.")
