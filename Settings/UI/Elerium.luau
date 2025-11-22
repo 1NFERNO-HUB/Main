@@ -1,5 +1,5 @@
 -- [[
-- Reworked By Havoc 
+ Reworked By Havoc 
 ]] --
 
 local ui_options = {
