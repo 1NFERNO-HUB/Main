@@ -1,5 +1,3 @@
--- CrystalData.lua
--- This file contains the data structure for all crystals and their possible pets.
 return {
     ["Blue Crystal"] = {
         "Blue Birdie | Basic",
